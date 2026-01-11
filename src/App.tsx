@@ -12,12 +12,12 @@ export default function App() {
       <SignedIn>
         <HashRouter>
           <Routes>
-            <Route path="/test/dashboard" element={<Dashboard />} />
-            <Route path="/test/security" element={<Security />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/security" element={<Security />} />
             {/* Optional fallback redirects */}
-            <Route path="/test/login" element={<Navigate to="/test/dashboard" replace />} />
-            <Route path="/test/register" element={<Navigate to="/test/dashboard" replace />} />
-            <Route path="*" element={<Navigate to="/test/dashboard" replace />} />
+            <Route path="/login" element={<Navigate to="/dashboard" replace />} />
+            <Route path="/register" element={<Navigate to="/dashboard" replace />} />
+            <Route path="*" element={<Navigate to="/dashboard" replace />} />
           </Routes>
         </HashRouter>
       </SignedIn>
@@ -26,10 +26,10 @@ export default function App() {
       <SignedOut>
         <HashRouter>
           <Routes>
-            <Route path="/test/login/*" element={<Login />} />
-            <Route path="/test/register/*" element={<Register />} />
+            <Route path="/login/*" element={<Login />} />
+            <Route path="/register/*" element={<Register />} />
             {/* Remove PasswordRst if using Clerk's built-in reset */}
-            <Route path="*" element={<Navigate to="/test/login" replace />} />
+            <Route path="*" element={<Navigate to="/login" replace />} />
           </Routes>
         </HashRouter>
       </SignedOut>
