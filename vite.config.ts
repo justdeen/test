@@ -8,5 +8,5 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 5000,
   },
-  base: '/test/test/',
+  base: '/test/',
 })

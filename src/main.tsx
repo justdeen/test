@@ -7,10 +7,10 @@ import App from './App.tsx'
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <ClerkProvider publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY}>
+    <ClerkProvider publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY}>
+      <BrowserRouter>
         <App />
-      </ClerkProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ClerkProvider>
   </StrictMode>
 );
