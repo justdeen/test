@@ -12,10 +12,10 @@ export default function Register() {
       }}
     >
       <SignUp
-        path="/register"
+        path="/test/register"
         routing="path"
-        signInUrl="/login"
-        fallbackRedirectUrl="/dashboard"
+        signInUrl="/test/login"
+        fallbackRedirectUrl="/test/dashboard"
       />
     </div>
   );

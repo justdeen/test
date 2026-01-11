@@ -11,10 +11,10 @@ export default function Login() {
       }}
     >
       <SignIn
-        path="/login"
+        path="/test/login"
         routing="path"
-        signUpUrl="/register"
-        fallbackRedirectUrl="/dashboard"
+        signUpUrl="/test/register"
+        fallbackRedirectUrl="/test/dashboard"
       />
     </div>
   );
